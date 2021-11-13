@@ -1,0 +1,18 @@
+<div class="col-md-12">
+    <label for="nuevo-pasajero">Nuevo pasajero</label>
+    <input type="text" class="form form-control" id="nuevo-pasajero" name="nuevo-pasajero" [(ngModel)]="nombrePasajero">
+</div>
+<div class="col-md-12 mt-4">
+    <button class="btn btn-success" (click)="registrarNombrePasajero()">
+        Enviar
+    </button>
+</div>
+<div class="col-md-12 mt-4">
+
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let pasajero of pasajerosABordo">
+            {{pasajero.nombrePasajero}}
+        </li>
+    </ul>
+
+</div>
